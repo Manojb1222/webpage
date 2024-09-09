@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI PROJECT</title>
+
+    <style>
+        /* header section */
+        .header {
+            width: 100%;
+            display: flex;
+            list-style-type: none;
+            justify-content: space-evenly;
+
+
+
+        }
+
+        /* header content1 */
+        .logo {
+            width: 40px;
+        }
+
+        .Journey {
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+
+        #content-1 {
+            display: flex;
+            align-items: center;
+
+        }
+        .menu-bar{
+            display: none;
+            width: 40px;
+        }
+
+        /* header content2 */
+        #content-2 {
+            display: flex;
+            width: 60%;
+            align-items: center;
+            font-weight: bold;
+            justify-content: space-between;
+
+        }
+
+        .item1:hover {
+            color: lightseagreen;
+            cursor: pointer;
+
+        }
+
+
+        /* this is main-1 section */
+        #container {
+            box-sizing: border-box;
+        }
+
+
+        .main-1 {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .banner {
+
+            background-image: url(./banner.jpg );
+            background-size: 100%;
+            text-align: center;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            padding-bottom: 150px;
+
+
+
+        }
+
+        /* this is b-content section */
+
+
+        .b-content-h1 {
+            padding-top: 150px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .dots-3 {
+            padding-top: 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .b-h3 {
+            font-size: 20px;
+            font-weight: 100;
+            position: relative;
+            z-index: 2;
+        }
+
+        .b-downarrow {
+            width: 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+
+        /* overlay is used to decrease background-image opacity */
+        .overlay {
+            position: absolute;
+            /* inset: 0; */
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+            opacity: 0.6;
+            z-index: 1;
+        }
+
+        /* this section is b-forms section */
+
+        .b-form {
+            width: 70%;
+            justify-content: center;
+            background-color: white;
+            color: black;
+            padding: 20px;
+
+            max-width: 900px;
+            margin: auto;
+            margin-top: 170px;
+            position: relative;
+            z-index: 2;
+            /* margin-bottom: 50px; */
+            /* box-sizing: border-box; */
+
+
+
+
+        }
+
+
+        .form-row1 {
+            display: flex;
+            flex-grow: 1;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .form-row1>.form-group {
+            width: 50%;
+        }
+
+        .form-row1 select {
+            width: 100%;
+
+        }
+
+        .form-group input {
+            width: 90%;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+
+
+        }
+
+        .form-group input:focus {
+            outline: 1px solid rgb(91, 204, 204);
+        }
+
+        .form_group1 input {
+            border: none;
+            /* width: 100%; */
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .form_group1 input:focus {
+            outline: 1px solid rgb(91, 204, 204);
+
+        }
+
+        .form_group1 select {
+            border: none;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .form_group1 select:focus {
+            outline: 1px solid rgb(91, 204, 204);
+        }
+
+
+        .form-group {
+            text-align: left;
+
+        }
+
+        .form_group1 {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .form_group2 {
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .form_group2 button {
+            border: none;
+        }
+
+        .form_group2 button:hover {
+            background-color: rgb(235, 109, 130);
+            cursor: pointer;
+        }
+
+        .form-row2 {
+            display: flex;
+            padding: 20px;
+            box-sizing: border-box;
+
+
+        }
+
+        .form-row2 button {
+            width: 100%;
+        }
+
+        .check-availability {
+            background-color: rgb(60, 211, 211);
+            color: white;
+            width: 100% !important;
+            padding: 10px;
+            margin: 10px 0px 10px 0px;
+            box-sizing: border-box;
+        }
+
+        .banner {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+
+        /* this section is main-2 section */
+        .main-2 {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-color: rgba(202, 196, 196, 0.596);
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .main-2journey {
+            font-weight: lighter;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        #journey2 {
+            font-weight: bold;
+        }
+
+        .main2-p1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            line-height: 2;
+        }
+
+        #continue-explore {
+            padding: 20px;
+            background-color: rgb(91, 204, 204);
+            color: white;
+            margin: auto;
+            border: none;
+
+        }
+
+        #continue-explore:hover {
+            background-color: rgb(235, 109, 130);
+            cursor: pointer;
+        }
+
+
+        .main-2btn {
+            /* display: flex; */
+            text-align: center;
+        }
+
+
+
+        /* this content is about main-3 section */
+
+        .main-3 {
+            display: flex;
+            position: relative;
+            margin-left: 50px;
+            margin-right: 50px;
+
+
+        }
+
+        .main3-img1 {
+            width: 100%;
+        }
+
+
+        .main-3content1 {
+            width: 50%;
+        }
+
+
+
+        .main-3content2 {
+            background-color: rgb(116, 230, 230);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            width: 50%;
+            padding: 60px;
+            align-self: center;
+            box-sizing: border-box;
+
+
+        }
+
+        .m3-btn {
+            padding: 20px;
+            border: none;
+            background-color: white;
+            color: rgb(79, 206, 206);
+        }
+
+        .m3-btn:hover {
+            background-color: rgb(235, 109, 130);
+            cursor: pointer;
+        }
+
+
+
+        /* this content is about main-4 section */
+        .main-4 {
+            margin-left: 50px;
+            margin-right: 50px;
+            display: flex;
+
+
+
+        }
+
+        .main-4content1 {
+
+            background-color: rgb(201, 77, 97);
+            color: white;
+            align-self: center;
+            padding: 60px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 50%;
+            box-sizing: border-box;
+
+        }
+
+        .m4-btn {
+            padding: 20px;
+            border: none;
+            background-color: white;
+            color: rgb(235, 109, 130);
+        }
+
+        .m4-btn:hover {
+            background-color: rgb(79, 206, 206);
+            cursor: pointer;
+        }
+
+
+
+        .main-4content2 {
+            width: 50%;
+
+
+
+        }
+
+        .main4-img1 {
+            width: 100%;
+
+        }
+
+        /* this content is about main-5 section */
+
+        .main-5 {
+            display: flex;
+            position: relative;
+            margin-left: 50px;
+            margin-right: 50px;
+
+
+        }
+
+        .main5-img1 {
+            width: 100%;
+        }
+
+
+        .main-5content1 {
+            width: 50%;
+        }
+
+
+
+        .main-5content2 {
+            background-color: rgb(116, 230, 230);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            width: 50%;
+            padding: 60px;
+            align-self: center;
+            box-sizing: border-box;
+
+
+        }
+
+        .m5-btn {
+            padding: 20px;
+            border: none;
+            background-color: white;
+            color: rgb(79, 206, 206);
+        }
+
+        .m5-btn:hover {
+            background-color: rgb(235, 109, 130);
+            cursor: pointer;
+        }
+
+
+        /* this content is about main-6 */
+
+        .grid-container {
+            border: none;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: rgb(128, 229, 229);
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            margin-top: 0;
+        }
+
+        .item {
+            padding: 40px;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            text-align: center;
+
+
+        }
+
+        .item:hover {
+            background-color: rgb(221, 135, 149);
+            cursor: pointer;
+        }
+
+        /* this is a content of main-7 */
+
+        .continent-container {
+            display: flex;
+
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* justify-content: center; */
+            justify-content: center;
+
+            font-size: 12px;
+            margin: 40px;
+
+
+        }
+
+        .Hotal-container {
+            margin: 30px;
+        }
+
+        .cities {
+            color: rgb(221, 46, 75);
+        }
+
+        .curveimg-content {
+            position: relative;
+            /* padding-left: 50px; */
+            display: flex;
+        }
+
+        .curveimg-content img {
+            position: absolute;
+            top: 0;
+            left: 0x;
+            height: 100%;
+
+
+        }
+
+        .currency-content {
+            padding: 20px;
+            padding-left: 50px;
+            display: flex;
+            align-items:
+                center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(79, 209, 209);
+        }
+
+        .currency-content {
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .currency {
+            color: white;
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        .curveimg-content> :hover {
+            background-color: rgb(235, 140, 155);
+            cursor: pointer;
+        }
+
+        .moreplaces {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+
+        }
+
+        .moreplaces_link {
+            padding: 20px;
+            background-color: rgb(90, 226, 226);
+            color: white;
+            border: none;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .moreplaces_link:hover {
+            background-color: rgb(235, 140, 155);
+            cursor: pointer;
+        }
+
+        .main-11 {
+            margin-left: 30px;
+            margin-right: 50px;
+
+        }
+
+        .map {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        iframe {
+            width: 90vw;
+            height: 100vh;
+        }
+
+        /* this is footer content */
+        .footer {
+            background-color: rgb(71, 202, 202);
+            padding: 20px;
+            margin-left: 80px;
+            margin-right: 80px;
+            box-sizing: border-box;
+
+
+
+
+        }
+
+        .copyright {
+            color: white;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* this content is about forms input */
+        .main-11 {
+            position: relative;
+        }
+
+        .main11_form {
+            position: absolute;
+            bottom: 20%;
+            left: 60%;
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box;
+
+
+
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .input-row {
+            border: none;
+            background-color: rgb(241, 237, 237);
+            padding: 10px;
+            width: 100%;
+
+
+        }
+
+        .input-row2 {
+            border: none;
+            background-color: rgb(241, 237, 237);
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+
+
+        }
+
+
+
+        #Subject {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+
+
+        .form_button {
+            padding: 10px;
+            border: none;
+            width: 100%;
+            color: white;
+            background-color: rgb(79, 209, 209);
+
+        }
+
+        .form input:focus-within {
+            outline: 1px solid rgb(128, 229, 229);
+
+        }
+
+        .form textarea:focus-within {
+            outline: 1px solid rgb(128, 229, 229);
+
+        }
+
+        /* @media queries */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width:1450px) {
+            body {
+                width: 100%;
+            }
+
+        }
+
+        @media screen and (max-width:1200px) {
+
+            /* main-3 */
+            .main-3content1 img {
+
+                width: 200%;
+            }
+
+            .main-3content2 {
+                width: 100%;
+            }
+
+            .main-3 {
+                display: block;
+                box-sizing: border-box;
+            }
+
+            /* main-5 */
+
+            .main-5content1 img {
+
+                width: 200%;
+            }
+
+            .main-5content2 {
+                width: 100%;
+            }
+
+            .main-5 {
+                display: block;
+                box-sizing: border-box;
+            }
+
+            /* main-4 */
+            .main-4content1 {
+                width: 100%;
+            }
+
+            .main-4content2 {
+                width: 100%;
+            }
+
+            .main-4 {
+                display: block;
+                box-sizing: border-box;
+            }
+
+        }
+
+        @media screen and (max-width:950px) {
+            .check-availability{
+                display: none;
+            }
+            .form_group1{
+                box-sizing: border-box;
+    
+            }
+            .menu-bar{
+            display: block;
+
+            }
+            .item1{
+                
+                display: none;
+            
+            }
+           .header{
+            display: flex;
+          justify-content: space-evenly;
+          box-sizing: border-box;
+            
+           }
+           .menu-bar .content2:hover{
+            display: contents;
+            cursor: pointer;
+           }
+
+
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        
+        <div id="content-1">
+            <img src="./logo.png" alt="" class="logo">
+            <div class="Journey">JOURNEY</div>
+        </div>
+        <div id="content-2">
+           
+            <div class="item1 item1">Home</div>
+            <div class="item1 item2">Top Destinations</div>
+            <div class="item1 item3">Recommended Places</div>
+            <div class="item1 item4">Contact Us</div>&NonBreakingSpace;
+            <img src="./bx-menu.svg" alt="" class="menu-bar">
+        </div>
+    </header>
+
+    <div id="container">
+
+        <!--main-1 -->
+
+        <main class="main-1">
+            <div class="banner">
+                <div id="b-content">
+                    <h1 class="b-content-h1">LET'S BEGIN</h1>
+                    <img src="./dots-3.png" alt="" class="dots-3">
+                    <h3 class="b-h3">We assist you to choose the best.</h3>
+                    <img src="./down-arrow-svgrepo-com.svg" alt="" class="b-downarrow">
+                </div>
+                <form class="b-form" action="">
+                    <div class="form-row1 ">
+                        <div class="form-group">
+                            <label for="destination">choose your destination</label><br>
+                            <input type="text" placeholder="Type your destination..." class="input " id="text">
+                        </div>
+                        <div class="form_group1">
+                            <label for="rooms">How many rooms?</label><br>
+                            <select name="rooms" id="room">
+                                <option value="1">1 Room</option>
+                                <option value="2">2 Room</option>
+                                <option value="3">3 Room</option>
+                                <option value="4">4 Room</option>
+                            </select>
+                        </div>
+                        <div class="form_group1">
+                            <label for="Adult">Adult</label><br>
+                            <select name="Adult" id="Adult">
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                            </select>
+                        </div>
+                        <div class="form_group1">
+                            <label for="children">children</label><br>
+                            <select name="children" id="children">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-row2 ">
+
+                        <div class="form_group1 group1">
+                            <label for="date" >check in Date</label><br>
+                            <input type="text" class="input" placeholder="Check In">
+                        </div>
+                        <div class="form_group1 group2">
+                            <label for="date" >check out Date</label><br>
+                            <input type="text" class="input" placeholder="Check out">
+                        </div>
+                       
+                            <div class="form_group2">
+                                <label for="submit">&nbsp;</label><br>
+                                <button class="check-availability">CHECK AVAILABILITY</button>
+                            </div>
+                
+
+                    </div>
+                </form>
+                <div class="overlay"></div>
+
+
+            </div>
+
+        </main>
+
+        <!--main-2 -->
+
+        <main class="main-2">
+            <div class="main-2journey">YOUR <span id="journey2">JOURNEY</span> IS OUR PRIORITY</div>
+            <p class="main2-p1">Nullam auctor.sapien sit amet lacina euismod, lorem magna lobortis massa, in tincidunt
+                mi
+                metus quis lectus.
+                Duis nec lobortis velit. Vivamus <br>id magna vulputate,tempor ante eget,tempus
+                augue. maecenas ultricies neque
+                magna.</p>
+            <div class="main-2btn">
+                <button type="button" id="continue-explore">CONTINUE EXPLORE</button>
+            </div>
+        </main>
+
+        <!--main-3 -->
+
+        <main class="main-3">
+            <div class="main-3content1">
+                <img src="./tm-img-01.jpg" alt="" class="main3-img1">
+            </div>
+
+            <div class="main-3content2">
+                <h1 class="m3-h1">Europe's most visited places</h1>
+                <p class="m3-pa">
+                    Aenean in lacus nec dolor fermentum congue. Maecenas ut velit pharetra, pharetra tortor sit
+                    amet, vulputate sem. Vestibulum mi nibh, faucibus ac eros id, sagittis tincidunt velit. Proin
+                    interdum ullamcorper faucibus. Ut mi nunc, sollicitudin non pulvinar id, sagittis eget diam.
+                </p>
+                <button class="m3-btn">CONTINUE READING</button>
+
+            </div>
+        </main>
+
+        <!-- main-4 -->
+
+        <main class="main-4">
+            <div class="main-4content1">
+                <h1 class="m4-h1">Asia's most popular places</h1>
+                <p class="m4-pa">
+                    Vivamus in massa ullamcorper nunc auctor accumsan ac at arcu. Donec sagittis mattis pharetra. Proin
+                    commodo, ante et volutpat pulvinar, arcu arcu ullamcorper diam, id maximus sem tellus id sem.
+                    Suspendisse eget rhoncus diam. Fusce urna elit, porta nec ullamcorper id.
+                </p>
+                <button class="m4-btn">CONTINUE READING</button>
+            </div>
+            <div class="main-4content2">
+                <img src="./tm-img-02.jpg" alt="" class="main4-img1">
+            </div>
+        </main>
+
+    </div>
+
+    <!--main-5 -->
+
+    <main class="main-5">
+        <div class="main-5content1">
+            <img src="./tm-img-03.jpg" alt="" class="main5-img1">
+        </div>
+
+        <div class="main-5content2">
+            <h1 class="m5-h1">America's most famous places</h1>
+            <p class="m5-pa">
+                Donec nec laoreet diam, at vehicula ante. Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Suspendisse nec dapibus nunc, quis viverra metus. Morbi eget diam gravida,
+                euismod magna vel, tempor urna.
+            </p>
+            <button class="m5-btn">CONTINUE READING</button>
+
+        </div>
+    </main>
+
+    <!-- main-6 -->
+
+    <main class="grid-container">
+        <div class="item item 1">
+            <img src="./north-america.png" alt="" class="north-america">
+            <br><span class="">NORTH AMERICA</span>
+        </div>
+        <div class="item item 2">
+            <img src="./south-america.png" alt="" class="south-america">
+            <br><span class="">SOUTH AMERICA</span>
+        </div>
+        <div class="item item 3">
+            <img src="./europe.png" alt="" class="europe"><br>
+            <span class="">Europe</span>
+        </div>
+        <div class="item item 4">
+            <img src="./asia.png" alt="" class="asia"><br>
+            <span class="">ASIA</span>
+        </div>
+        <div class="item item 5">
+            <img src="./africa.png" alt="" class="africa"><br>
+            <span class="">AFRICA</span>
+        </div>
+        <div class="item item 6">
+            <img src="./australia.png" alt="" class="australia"><br>
+            AUSTRALIA
+        </div>
+        <div class="item item 7">
+            <img src="./antartica.png" alt="" class="antartica"><br>
+            <span class="">ANTARTICA</span>
+        </div>
+    </main>
+
+    <!-- main-7 -->
+
+    <main class="main-7">
+        <div class="continent-container">
+            <div>
+                <img src="./tm-img-06.jpg" alt="">
+            </div>
+            <div class="Hotal-container">
+                <h3 class="">ASIA RESORT HOTEL</h3>
+                <p class="cities">Singapore</p>
+                <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet
+                    lectus. Donec blandit luctus dictum.. <br>
+                    nascetur ridiculus mus. Suspendisse nec dapibus nunc, quis viverra metus. Morbi eget diam gravida,
+                    euismod.
+                </p>
+            </div>
+            <div class="curveimg-content">
+                <img src="./button-curve.png" alt="">
+                <div class="currency-content">
+                    <p class="currency">$440</p>
+                    <p class="link">CONTINUE READING</p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- main-8 -->
+
+    <main class="main-8">
+        <div class="continent-container">
+            <div>
+                <img src="./tm-img-07.jpg" alt="">
+            </div>
+            <div class="Hotal-container">
+                <h3 class="">NULLAM EGET EST A NISI</h3>
+                <p class="cities">Yangon,Myanmar</p>
+                <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet
+                    lectus. Donec blandit luctus dictum.. <br>
+                    nascetur ridiculus mus. Suspendisse nec dapibus nunc, quis viverra metus. Morbi eget diam gravida,
+                    euismod.
+                </p>
+            </div>
+            <div class="curveimg-content">
+                <img src="./button-curve.png" alt="">
+                <div class="currency-content">
+                    <p class="currency">$450</p>
+                    <p class="link">CONTINUE READING</p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- main-9 -->
+
+    <main class="main-9">
+        <div class="continent-container">
+            <div>
+                <img src="./tm-img-05.jpg" alt="">
+            </div>
+            <div class="Hotal-container">
+                <h3 class="">PROIN INTERDUM ULLAMCORPER</h3>
+                <p class="cities">Bangkok,Thailand</p>
+                <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet
+                    lectus. Donec blandit luctus dictum.. <br>
+                    nascetur ridiculus mus. Suspendisse nec dapibus nunc, quis viverra metus. Morbi eget diam gravida,
+                    euismod.
+                </p>
+            </div>
+            <div class="curveimg-content">
+                <img src="./button-curve.png" alt="">
+                <div class="currency-content">
+                    <p class="currency">$460</p>
+                    <p class="link">CONTINUE READING</p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- main-10 -->
+
+    <main class="main-10">
+        <div class="continent-container">
+            <div>
+                <img src="./tm-img-04.jpg" alt="">
+            </div>
+            <div class="Hotal-container">
+                <h3 class="">LOREM IPSUM DOLOR SIT</h3>
+                <p class="cities">Vientiane,Laos</p>
+                <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet
+                    lectus. Donec blandit luctus dictum.. <br>
+                    nascetur ridiculus mus. Suspendisse nec dapibus nunc, quis viverra metus. Morbi eget diam gravida,
+                    euismod.
+                </p>
+            </div>
+            <div class="curveimg-content">
+                <img src="./button-curve.png" alt="">
+                <div class="currency-content">
+                    <p class="currency">$470</p>
+                    <p class="link">CONTINUE READING</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="moreplaces">
+            <button class="moreplaces_link">SHOW MORE PLACES</button>
+        </div>
+
+    </main>
+
+    <main class="main-11">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2742.778650615481!2d78.3987041931982!3d17.492992078776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91625d9cd1ad%3A0x4455387ad24a675d!2s10000coders!5e0!3m2!1sen!2sin!4v1724595112085!5m2!1sen!2sin"
+                style="border:0" allowfullscreen="yes" loading="lazy" frameborder="0"></iframe>
+            <div class="form">
+                <form action="" method="post" class="main11_form">
+                    <div class="form-row">
+
+                        <input type="text" id="name" name="name" class="input-row" placeholder="Name" required>
+
+                        <input type="email" id="email" name="mail" class="input-row" placeholder="Email" required>
+
+                    </div>
+
+                    <input type="text" id="Subject" name="Subject" class="input-row2" placeholder="Subject" required>
+
+                    <textarea type="text" id="message" name="message" class="input-row2" rows="10" placeholder="Message"
+                        required>
+                        </textarea>
+
+                    <button type="submit" class="form_button">SEND MESSAGE NOW</button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">copyright &copy; 2024 Your Compay . Designed by Template Manoj</p>
+    </footer>
+
+
+
+</body>
+
+</html>
